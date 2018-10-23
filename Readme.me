@@ -17,5 +17,8 @@ npm uninstall -g angular-cli
 npm cache clean
 npm install -g @angular/cli@latest
 
+    "build-electron": "copy src\\electron\\* dist",
+    "electron": "electron ./dist",
+    "start": "npm run build-electron && npm run electron"
 
 aaabb
